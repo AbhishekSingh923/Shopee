@@ -7,4 +7,9 @@
 
 <h1>User Dashboard</h1>
 
+<form action="{% url 'logout' %}" method="post">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-primary">Logout</button>
+</form>
+
 {% endblock %}

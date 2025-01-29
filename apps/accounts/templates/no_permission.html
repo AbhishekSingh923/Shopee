@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+
+
+
+
+
+{% block content %} 
+
+<div class="d-flex justify-content-center align-items-center text-center" style="height: 100vh;">
+
+    <div>
+        <h1>401</h1>
+        <h2>Unauthorized Access</h2>
+        <p>You are not login please login first</p>
+        <a href="{% url 'login' %}" class="btn btn-primary">Login</a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+{% endblock %}
